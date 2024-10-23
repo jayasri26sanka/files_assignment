@@ -5,7 +5,7 @@ def load_json_file():
 
     folder_name=input('Enter the folder name where your JSON file is located: ')
     file_name='jayasri_sanka_adoptions.json'    
-    file_path_way='C:/Users/jayas/OneDrive/Desktop/files_assignment/files_assignment/jayasri_sanka_adoptions.json'
+    file_path_way=os.path.join(folder_name,file_name)
     try:
         with open(file_path_way, 'r') as file:
             data = json.load(file)
